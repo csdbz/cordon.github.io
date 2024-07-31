@@ -13,18 +13,29 @@
             margin: 0;
             overflow: hidden;
             display: flex;
-            align-items: flex-start;
+            align-items: flex-start; /* Align content to the top */
             justify-content: center;
-            padding-top: 10vh;
+            padding-top: 30vh; /* Move text to the top third */
         }
         .centered-content {
             white-space: pre-wrap;
-            font-size: 20px;
-            /* font-weight: bold; */
-            color: #666666;
+            font-weight: bold;
+            color: #666666; /* Set default color */
+            font-size: 20px; /* Default font size */
         }
         .centered-content span {
             color: white; /* Set color for 'o' */
+        }
+        /* Responsive font size adjustments */
+        @media (max-width: 768px) {
+            .centered-content {
+                font-size: 16px; /* Adjust font size for tablets and smaller devices */
+            }
+        }
+        @media (max-width: 480px) {
+            .centered-content {
+                font-size: 14px; /* Adjust font size for mobile phones */
+            }
         }
     </style>
 </head>
@@ -34,7 +45,7 @@
      <span>o</span>   <span>o</span>                         
   <span>o</span>         <span>o</span>                     
 
- <span>o</span>   c <span>o</span> r d <span>o</span> n  ·  s y s t e m s
+ <span>o</span>   c <span>o</span> r d <span>o</span> n  ·  s y s t <span>e</span> m <span>s</span>
 
   <span>o</span>         <span>o</span>                     
      <span>o</span>   <span>o</span>                        
